@@ -1,0 +1,31 @@
+{
+  "url": "http://localhost:8080/caps-app/capservices/fulfillment/accesspoints/v3/slots",
+  "method": "POST",
+  "headers": {
+    "content-length": "575",
+    "x-o-segment": "oaoh",
+    "wm_qos.correlation_id": "stratiPQATestRequest",
+    "wm_consumer.tenant_id": "0",
+    "postman-token": "1951e1f8-a7c4-4ccc-9474-81693577a0df,727ca966-3465-451f-98ce-1af40f132835",
+    "wm_svc.version": "1.0.0",
+    "wm_sec.key_version": "1",
+    "wm_svc.name": "caps-app",
+    "wm_consumer.id": "088071a6-e1ef-483e-9asa78b-c2cf2dd8f0c6",
+    "accept": "*/*",
+    "wm_consumer.intimestamp": "088071a6-e1ef-483e-978b-c2cf2dd8f0c",
+    "wm_sec.auth_signature": "WXZ9DlAVOqk/PH6eJLPda92f3WZifV8X3cSgMpvTIvy4JYMfcZH4i2dlF5HC/p2p1n5SyUbGg7KlbdLhnUxQ+NLnmVeOTqlMX3dHfhKXLBocUza+YIPMPI+uTMOQtYQxEa61qa4bc8QT4cQoWqiN6ZMIzsPLXczrTUafkHUAWeA=",
+    "host": "localhost:8080",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "wm_svc.env": "{{env}}",
+    "accept-encoding": "gzip, deflate",
+    "user-agent": "PostmanRuntime/7.15.0"
+  },
+  "cookies": null,
+  "payLoad": "{\n    \"payload\": {\n        \"numOfDays\": 7,\n        \"expressInfo\": {\n            \"enablePreciseDestination\": false,\n            \"ignoreItemQty\": true\n        },\n        \"orderInfo\": {\n            \"totalQuantity\": 7,\n            \"numOfLineItems\": 3\n        },\n        \"serviceInfo\": {\n            \"accessType\": \"PICKUP_CURBSIDE\"\n        },\n        \"customerInfo\": {\n            \"customerAddress\": {\n                \"isPoBox\": \"N\",\n                \"isApoFpo\": \"N\"\n            }\n        },\n        \"enableExpress\": false,\n        \"storeIds\": [\n            \"937\"\n        ]\n    }\n}",
+  "response": null,
+  "validator": {
+    "payLoad": "{\"status\":\"OK\",\"payload\":{\"startDate\":\"2022-05-24\",\"endDate\":\"2022-05-30\",\"supportExpress\":false,\"supportedSlotTypes\":[\"100\"],\"slotDays\":[{\"slotDate\":\"_2022-05-24\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-25\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-26\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-27\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-28\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-29\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]},{\"slotDate\":\"_2022-05-30\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"supportedTimezone\":\"US/Eastern\",\"fulfillmentType\":\"INSTORE_PICKUP\",\"slots\":[]}],\"accessPointDetails\":[{\"accessPointId\":\"25bd10a1-46c5-46d3-b6ef-6aa2d8ea2d00\",\"accessPointName\":\"937 - Express Delivery\",\"supportedTimezone\":\"US/Eastern\",\"locationInstructions\":\"Follow orange 'Pickup' signs in Walmart parking lot. Park and wait in any 'Reserved Pickup Parking' spot\",\"minimumPurchase\":\"0.0\",\"storeId\":\"937\",\"fulfillmentStoreId\":\"937\",\"serviceAddress\":{\"isApoFpo\":\"N\",\"isPoBox\":\"N\",\"country\":\"US\",\"geoPoint\":{\"latitude\":\"34.018317\",\"longitude\":\"-84.557462\"},\"city\":\"MARIETTA\",\"postalCode\":\"300663361\",\"addressLineOne\":\"2795 CHASTAIN MEADOWS PKWY\",\"stateOrProvinceName\":\"GA\",\"state\":\"GA\"},\"isPilotTraining\":false,\"isTest\":false,\"isCrowdSourced\":true,\"acceptsEbtYN\":\"Y\",\"ebtPayInPerson\":\"N\",\"allowAgeRestricted\":false,\"allowAlcohol\":false}],\"serviceInfo\":{\"fulfillmentType\":\"INSTORE_PICKUP\",\"reservationType\":\"SLOTS\",\"dispenseType\":\"PICKUP_CURBSIDE\",\"priority\":0,\"carrier\":\"NA\",\"fulfillmentOption\":\"PICKUP\",\"locationType\":\"Store\",\"accessType\":\"PICKUP_CURBSIDE\"}}}"
+  }
+}

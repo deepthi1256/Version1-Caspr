@@ -1,0 +1,50 @@
+---
+#common properties for all config and will be replaced by active profile.
+
+spring:
+  #  main:
+  #    allow-circular-references: true
+  application:
+    name: caspr-event-consumer
+  profiles:
+    active: dev
+
+---
+#'dev' profile only
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+    logsPath: C:\\logs\\
+
+  kafka:
+    bootstrap-servers: localhost:29092
+    client-id: caspr-event-consumer
+    listener:
+      concurrency: 4
+    consumer:
+      group-id: consumergroupId
+      properties:
+        spring.json:
+          use.type.headers: false
+          value.default.type: java.lang.String
+      auto-offset-reset: earliest
+      max-poll-records: 1000
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      enable-auto-commit: false
+    topic:
+      name: test-topic
+    consumer-thread-pool-config:
+      threadCap: 5
+      queuedTaskCap: 20
+      threadPrefix: CasprConsumer
+      ttlSeconds: 60
+
+server:
+  port: 8080
+
+
+log:
+  path: 'C:\\logs\\'
